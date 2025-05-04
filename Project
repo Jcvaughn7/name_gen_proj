@@ -1,0 +1,47 @@
+# Output the number of names to EC2 Instances:
+
+import random
+employees = ["Jeffrey", "Steven", "James", "Rocky", "Ashlie", "Stephanie", "Kelly", "Ariel",
+             "Elizabeth", "Lisa", "Tenise", "Lawrence"]
+
+ec2_instances = int(input('How many EC2 Instances would you like named? '))
+print(random.sample(employees, ec2_instances ))
+
+#concat each department to the names
+
+import random 
+
+# List of Employees
+employee_list = employees = ["Jeffrey", "Steven", "James", "Rocky", "Ashlie", "Stephanie", "Kelly", "Ariel",
+             "Elizabeth", "Lisa", "Tenise", "Lawrence"]
+
+# Get user input for the number of EC2 Instances and the department
+ec2_instances = int(input('How many EC2 Instances do you want to be named? '))
+department = input('What department do you work in? ')
+
+# Generate the EC2 Instance names randomly by sampling from the employee list while concatenating with the department
+__name__ = [f"{department}-{employee}" for employee in random.sample(employee_list, ec2_instances)]
+
+# Print EC2 Instance names
+for name in __name__:
+    print(name)
+
+# Concatenate characters and department to name
+
+import random 
+
+# List of employees
+employees = ["Jeffrey", "Steven", "James", "Rocky", "Ashlie", "Stephanie", "Kelly", "Ariel",
+             "Elizabeth", "Lisa", "Tenise", "Lawrence"]
+
+# Get your input for the number of EC2 Instances and department
+
+ec2_instances = int(input('How many EC2 instances would you like named?' ))
+department = input('What department do you currently work in? ' )
+symbols = ('1234567890!@#$%^&*')
+# Generate the name of the EC2 Instance at random by pulling from the list of employees and concatenating with symbols and the department
+__name__ = [f"{department}-{employee}-{random.sample(symbols,10)}" for employee in random.sample(employee_list, ec2_instances)]
+
+# Print the names of the EC2 Instances
+for name in __name__:
+    print(name)
